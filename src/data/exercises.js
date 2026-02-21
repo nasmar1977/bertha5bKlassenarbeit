@@ -1,0 +1,62 @@
+export const GENITIVE_EXERCISES = [
+  { prompt: "Das Buch von Tom", answer: "Tom's book", hint: "Tom + 's + book" },
+  { prompt: "Die Katze von Caroline", answer: "Caroline's cat", hint: "Caroline + 's + cat" },
+  { prompt: "Das Haustier von George", answer: "George's pet", hint: "George + 's + pet" },
+  { prompt: "Der Lehrer von Emma", answer: "Emma's teacher", hint: "Emma + 's + teacher" },
+  { prompt: "Das Klassenzimmer der Schüler (pupils)", answer: "the pupils' classroom", hint: "the pupils + ' + classroom (Plural!)" },
+  { prompt: "Die Bibliothek der Schule", answer: "the school's library", hint: "the school + 's + library" },
+  { prompt: "Der Stundenplan von Ben", answer: "Ben's timetable", hint: "Ben + 's + timetable" },
+  { prompt: "Die Lunchbox der Kinder (children)", answer: "the children's lunchbox", hint: "the children + 's + lunchbox (unregelmäßiger Plural!)" },
+  { prompt: "Die Mutter von James", answer: "James's mother", hint: "James + 's + mother (oder James')" },
+  { prompt: "Der Hund meines Freundes (friend)", answer: "my friend's dog", hint: "my friend + 's + dog" },
+  { prompt: "Die Tür des Computerraums (IT room)", answer: "the IT room's door", hint: "the IT room + 's + door" },
+  { prompt: "Das Lieblingsfach von Sarah", answer: "Sarah's favourite subject", hint: "Sarah + 's + favourite subject" },
+];
+
+export const IMPERATIVE_EXERCISES = [
+  { situation: "Du willst, dass jemand die Tafel putzt.", answer: "Clean the board, please!", alt: ["clean the board please", "clean the board"] },
+  { situation: "Du willst, dass jemand sein Buch öffnet.", answer: "Open your book!", alt: ["open your book please", "open your book"] },
+  { situation: "Du willst, dass die Klasse nicht redet.", answer: "Don't talk in class!", alt: ["don't talk in class", "do not talk in class"] },
+  { situation: "Du willst, dass jemand nicht rennt.", answer: "Don't run!", alt: ["don't run", "do not run"] },
+  { situation: "Du willst, dass jemand dir hilft.", answer: "Help me, please!", alt: ["help me please", "help me", "please help me"] },
+  { situation: "Du willst, dass jemand zuhört.", answer: "Listen, please!", alt: ["listen please", "listen", "please listen"] },
+  { situation: "Du willst, dass jemand sich hinsetzt.", answer: "Sit down, please!", alt: ["sit down please", "sit down", "please sit down"] },
+  { situation: "Du willst, dass jemand nicht isst.", answer: "Don't eat in class!", alt: ["don't eat in class", "don't eat", "do not eat in class"] },
+  { situation: "Du willst, dass jemand auf den Lehrer schaut.", answer: "Look at the teacher!", alt: ["look at the teacher please", "look at the teacher"] },
+  { situation: "Du willst, dass jemand nicht sein Handy benutzt.", answer: "Don't use your phone!", alt: ["don't use your phone", "do not use your phone"] },
+];
+
+export const CAN_EXERCISES = [
+  { type: "translate", de: "Ich kann schwimmen.", answer: "I can swim.", hint: "I + can + swim" },
+  { type: "translate", de: "Sie kann nicht singen.", answer: "She can't sing.", hint: "She + can't + sing" },
+  { type: "translate", de: "Kannst du Klavier spielen?", answer: "Can you play the piano?", hint: "Can + you + play the piano?" },
+  { type: "translate", de: "Wir können Fußball spielen.", answer: "We can play football.", hint: "We + can + play football" },
+  { type: "translate", de: "Er kann nicht kochen.", answer: "He can't cook.", hint: "He + can't + cook" },
+  { type: "translate", de: "Kann ich helfen?", answer: "Can I help?", hint: "Can + I + help?" },
+  { type: "translate", de: "Sie können nicht Französisch sprechen.", answer: "They can't speak French.", hint: "They + can't + speak French" },
+  { type: "translate", de: "Kannst du Pizza machen?", answer: "Can you make pizza?", hint: "Can + you + make pizza?" },
+  { type: "translate", de: "Ich kann das Rätsel nicht verstehen.", answer: "I can't understand the puzzle.", hint: "I + can't + understand + the puzzle" },
+  { type: "translate", de: "Wir können nach der Schule Fußball spielen.", answer: "We can play football after school.", hint: "We + can + play football + after school" },
+  { type: "negative", sentence: "I can swim.", answer: "I can't swim.", hint: "Ersetze 'can' durch 'can't'" },
+  { type: "question", sentence: "She can dance.", answer: "Can she dance?", hint: "Stelle 'can' an den Anfang" },
+  { type: "negative", sentence: "They can play the piano.", answer: "They can't play the piano.", hint: "Ersetze 'can' durch 'can't'" },
+  { type: "question", sentence: "You can help me.", answer: "Can you help me?", hint: "Stelle 'can' an den Anfang" },
+];
+
+export const WRITING_PROMPTS = [
+  { category: "general", prompt: "Wie heißt deine Schule?", helper: "My school is called ___.", example: "My school is called Bertha-von-Suttner." },
+  { category: "general", prompt: "Wo ist deine Schule?", helper: "My school is in ___.", example: "My school is in Berlin." },
+  { category: "general", prompt: "Wie ist deine Schule? (groß/klein/alt/neu)", helper: "My school is ___.", example: "My school is very big and old." },
+  { category: "general", prompt: "In welcher Klasse bist du?", helper: "I am in class ___.", example: "I am in class 5b." },
+  { category: "building", prompt: "Was gibt es in deiner Schule? (cafeteria, library, gym...)", helper: "There is a big ___. / We have got a ___.", example: "There is a big cafeteria. We have got a library." },
+  { category: "building", prompt: "Wo ist dein Klassenzimmer?", helper: "My classroom is on the ___ floor.", example: "My classroom is on the first floor." },
+  { category: "building", prompt: "Wie ist dein Klassenzimmer?", helper: "My classroom is ___.", example: "My classroom is very nice and bright." },
+  { category: "subjects", prompt: "Was ist dein Lieblingsfach?", helper: "My favourite subject is ___.", example: "My favourite subjects are Latin and PE." },
+  { category: "subjects", prompt: "Warum magst du ein Fach?", helper: "I like ___ because it is ___.", example: "I like science because it is interesting." },
+  { category: "subjects", prompt: "Welches Fach magst du nicht?", helper: "I don't like ___ because it is ___.", example: "I don't like music because it is boring." },
+  { category: "day", prompt: "Wann beginnt die Schule?", helper: "School starts at ___ o'clock.", example: "My school starts at eight o'clock." },
+  { category: "day", prompt: "Wann ist die Schule aus?", helper: "School finishes at ___ o'clock.", example: "My school finishes at two o'clock." },
+  { category: "day", prompt: "Wann ist die große Pause?", helper: "There is a big break at ___.", example: "There is a big break at quarter past nine." },
+  { category: "day", prompt: "Was machst du in der Pause?", helper: "In the break I ___.", example: "In the break I play with my friends." },
+  { category: "general", prompt: "Schreibe einen Schlusssatz!", helper: "I like my school because ___.", example: "I like my school because it is really fun!" },
+];
