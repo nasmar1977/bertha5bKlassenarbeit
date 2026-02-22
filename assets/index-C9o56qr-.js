@@ -100,10 +100,25 @@ Gib eine Gesamtkorrektur. Antworte NUR als JSON (kein Markdown, keine Backticks)
   "correctedText": "der vollständig korrigierte Text, schön formatiert mit Satzzeichen",
   "grade": "gut/sehr gut/befriedigend/ausbaufähig",
   "emoji": "passendes Emoji",
-  "strengths": ["Stärke 1", "Stärke 2"],
-  "improvements": ["Verbesserung 1", "Verbesserung 2"],
+  "strengths": ["konkrete Stärke 1", "konkrete Stärke 2", "konkrete Stärke 3"],
+  "improvements": ["konkreter Verbesserungstipp 1", "konkreter Verbesserungstipp 2"],
   "overallFeedback": "2-3 Sätze ermutigendes Gesamtfeedback auf Deutsch"
 }
+
+WICHTIG für strengths: Nenne KONKRETE Stärken, z.B.:
+- "Du hast die Satzstellung meistens richtig (Subjekt-Verb-Objekt)"
+- "Gute Verwendung von Adjektiven wie 'big' und 'nice'"
+- "Abwechslungsreiche Satzanfänge"
+- "Fächer und Eigennamen richtig großgeschrieben"
+NICHT: "Du hast 15 Sätze geschrieben" (das ist keine Stärke)
+
+WICHTIG für improvements: Nenne KONKRETE Tipps, z.B.:
+- "Übe die Unterscheidung von 'is' und 'are' (My school IS, We ARE)"
+- "Achte auf die Großschreibung von Fächern: 'maths' → 'Maths'"
+- "Versuche auch mal längere Sätze mit 'because' oder 'and' zu bilden"
+NICHT: "Übe weiter" (das ist kein konkreter Tipp)
+
+Nenne mindestens 2-3 Stärken und 1-2 Verbesserungstipps.
 Sei nett, ermutigend und konstruktiv. Der Schüler ist 10-11 Jahre alt.
 Bewerte fair für das 5.-Klasse-Niveau.`;function Mo({onBack:g,exercises:y,config:c}){const{color:E,title:j,icon:z,getPrompt:L,getLabel:M,placeholder:K,ruleBox:ve,getHint:pe}=c,[U,q]=Y.useState([]),[V,ce]=Y.useState(0),[F,$]=Y.useState(""),[J,he]=Y.useState(null),[Te,b]=Y.useState(0),[ee,X]=Y.useState(!1),[we,Ne]=Y.useState(!1),[xe,Ie]=Y.useState(!1),Ke=Y.useRef(null),ne=()=>{q($a(y).slice(0,10)),ce(0),b(0),Ne(!1),$(""),he(null),X(!1)};Y.useEffect(()=>{ne()},[]),Y.useEffect(()=>{Ke.current&&!we&&!J&&!xe&&Ke.current.focus()},[V,J,we,xe]);const T=U[V],W=async()=>{if(!F.trim()||J||xe)return;if(uf(F,T.answer,T.alt||[])){he({correct:!0,answer:T.answer}),b(oe=>oe+1);return}{Ie(!0);try{const oe=L(T),C=`Übungsart: ${j}
 Aufgabe: "${oe}"
